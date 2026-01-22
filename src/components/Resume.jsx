@@ -28,6 +28,8 @@ const SkillIcon = ({ src, alt }) => {
 };
 
 const Resume = () => {
+  const baseUrl = import.meta.env.BASE_URL;
+  
   const education = [
     {
       title: "Bachelor's degree, Computer engineering",
@@ -45,18 +47,18 @@ const Resume = () => {
   ];
 
   const skills = [
-    { src: '/skills/Group 1.svg', alt: 'GraphQL' },
-    { src: '/skills/Group 7.svg', alt: 'Node.js' },
-    { src: '/skills/Group 8.svg', alt: 'React' },
-    { src: '/skills/Group 9.svg', alt: 'Vue' },
-    { src: '/skills/Group 10.svg', alt: 'HTML5 & CSS3' },
-    { src: '/skills/Group 11.svg', alt: 'JavaScript' },
-    { src: '/skills/Group 12.svg', alt: 'Python' },
-    { src: '/skills/Group 13.svg', alt: 'PowerShell' },
-    { src: '/skills/n8n-logo.svg', alt: 'n8n' },
-    { src: '/skills/zapier-logo.svg', alt: 'Zapier' },
-    { src: '/skills/Group 17.svg', alt: 'Next.js' },
-    { src: '/skills/Group 1.svg', alt: 'Nuxt' },
+    { src: `${baseUrl}skills/Group 1.svg`, alt: 'GraphQL' },
+    { src: `${baseUrl}skills/Group 7.svg`, alt: 'Node.js' },
+    { src: `${baseUrl}skills/Group 8.svg`, alt: 'React' },
+    { src: `${baseUrl}skills/Group 9.svg`, alt: 'Vue' },
+    { src: `${baseUrl}skills/Group 10.svg`, alt: 'HTML5 & CSS3' },
+    { src: `${baseUrl}skills/Group 11.svg`, alt: 'JavaScript' },
+    { src: `${baseUrl}skills/Group 12.svg`, alt: 'Python' },
+    { src: `${baseUrl}skills/Group 13.svg`, alt: 'PowerShell' },
+    { src: `${baseUrl}skills/n8n-logo.svg`, alt: 'n8n' },
+    { src: `${baseUrl}skills/zapier-logo.svg`, alt: 'Zapier' },
+    { src: `${baseUrl}skills/Group 17.svg`, alt: 'Next.js' },
+    { src: `${baseUrl}skills/Group 1.svg`, alt: 'Nuxt' },
   ];
 
   return (
@@ -71,7 +73,7 @@ const Resume = () => {
       {/* Education Section */}
       <section className="mb-12 relative">
         <div className="flex items-center gap-3 mb-6">
-          <img src="/Frame.svg" alt="Education" className="w-6 h-6" />
+          <img src={`${baseUrl}Frame.svg`} alt="Education" className="w-6 h-6" />
           <h3 className="text-white text-2xl font-semibold">Education</h3>
         </div>
         {/* Single continuous vertical line from icon through timeline */}
@@ -86,7 +88,7 @@ const Resume = () => {
       {/* Experience Section */}
       <section className="mb-12 relative">
         <div className="flex items-center gap-3 mb-6">
-          <img src="/Frame.svg" alt="Experience" className="w-6 h-6" />
+          <img src={`${baseUrl}Frame.svg`} alt="Experience" className="w-6 h-6" />
           <h3 className="text-white text-2xl font-semibold">Experience</h3>
         </div>
         {/* Single continuous vertical line from icon through timeline */}

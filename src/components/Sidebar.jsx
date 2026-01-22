@@ -7,7 +7,7 @@ const Sidebar = () => {
       <div className="relative mb-6">
         <div className="w-[220px] h-[228px] rounded-2xl overflow-hidden bg-gradient-to-br from-yellow-200 to-orange-100">
           <img
-            src="/profile.svg"
+            src={`${import.meta.env.BASE_URL}profile.svg`}
             alt="Shimanshu"
             className="w-full h-full object-cover"
           />

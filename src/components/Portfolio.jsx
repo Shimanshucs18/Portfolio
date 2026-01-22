@@ -23,31 +23,32 @@ const ProjectCard = ({ image, title, category, link }) => {
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const filters = ['All', 'Web Development', 'Mobile Development'];
+  const baseUrl = import.meta.env.BASE_URL;
 
   const projects = [
     {
-      image: '/projects/getbild.svg',
+      image: `${baseUrl}projects/getbild.svg`,
       title: 'CuraStream AI',
       category: 'Desktop App Development',
       type: 'Desktop',
       link: 'https://curastream.ai/en/'
     },
     {
-      image: '/projects/curastream.svg',
+      image: `${baseUrl}projects/curastream.svg`,
       title: 'GetBild',
       category: 'Web Development',
       type: 'Web Development',
       link: 'https://www.getbild.com/'
     },
     {
-      image: '/projects/talkstack.svg',
+      image: `${baseUrl}projects/talkstack.svg`,
       title: 'Talkstack AI',
       category: 'Web Development',
       type: 'Web Development',
       link: 'https://www.talkstack.ai/'
     },
     {
-      image: '/projects/voece.svg',
+      image: `${baseUrl}projects/voece.svg`,
       title: 'Voece AI',
       category: 'AI Integration',
       type: 'Web Development',
